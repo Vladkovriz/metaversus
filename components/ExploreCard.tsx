@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 
-import styles from '../styles'
+import styles from '../styles/styles'
 import { fadeIn } from '../utils/motion'
 import React, { FC } from 'react'
 

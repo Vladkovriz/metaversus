@@ -9,7 +9,7 @@ import { fadeIn, planetVariants, staggerContainer } from '../utils/motion'
 import { newFeatures } from '../constants'
 import { NewFeatures, TitleText, TypingText } from '../components'
 
-import styles from '../styles'
+import styles from '../styles/styles'
 
 const WhatsNew = () => (
     <section className={`${styles.paddings} relative z-10`}>
@@ -25,7 +25,7 @@ const WhatsNew = () => (
                 className="flex-[0.75] flex justify-center flex-col"
             >
                 <TypingText title="| What's New?" />
-                <TitleText title={<>What's new about Metaversus?</>} />
+                <TitleText title={"What's new about Metaversus?"} />
 
                 <div className="mt-[48px] flex flex-wrap justify-between gap-[24px]">
                     {newFeatures.map(feature => (

@@ -6,7 +6,7 @@ import { footerVariants } from '../utils/motion'
 
 import { socials } from '../constants'
 
-import styles from '../styles'
+import styles from '../styles/styles'
 
 const Footer: FC = () => (
     <motion.footer

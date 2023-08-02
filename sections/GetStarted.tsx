@@ -3,7 +3,7 @@ import React from 'react'
 
 import { motion } from 'framer-motion'
 
-import styles from '../styles'
+import styles from '../styles/styles'
 
 import { fadeIn, planetVariants, staggerContainer } from '../utils/motion'
 
@@ -34,7 +34,7 @@ const GetStarted = () => (
                 className="flex-[0.75] flex justify-center flex-col"
             >
                 <TypingText title="| How Metaversus Works" />
-                <TitleText title={<>Get started with just a few clicks</>} />
+                <TitleText title={"Get started with just a few clicks"} />
 
                 <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
                     {startingFeatures.map((feature, idx) => (

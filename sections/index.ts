@@ -1,4 +1,4 @@
-import Hero from './Hero'
+import Hero from './Hero.tsx'
 import About from './About'
 import Explore from './Explore'
 import GetStarted from './GetStarted'

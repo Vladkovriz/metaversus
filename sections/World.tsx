@@ -8,7 +8,7 @@ import { fadeIn, staggerContainer } from '../utils/motion'
 
 import { TitleText, TypingText } from '../components'
 
-import styles from '../styles'
+import styles from '../styles/styles'
 
 const World = () => (
     <section className={`${styles.paddings} relative z-10`}>
@@ -25,10 +25,7 @@ const World = () => (
             />
             <TitleText
                 title={
-                    <>
-                        Track friends around you and invite them to play
-                        together in the same world
-                    </>
+                        "Track friends around you and invite them to play \n together in the same world"
                 }
                 textStyles="text-center"
             />

@@ -7,8 +7,8 @@ import { motion } from 'framer-motion'
 import { textContainer, textVariant2 } from '../utils/motion'
 
 interface ITextComponentProps {
-    title: string
-    textStyles: string
+    title: string;
+    textStyles?: string;
 }
 
 export const TypingText: FC<ITextComponentProps> = ({

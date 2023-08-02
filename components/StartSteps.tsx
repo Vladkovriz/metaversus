@@ -1,6 +1,6 @@
 import React, { FC, ReactElement } from 'react'
 
-import styles from '../styles'
+import styles from '../styles/styles'
 
 interface IStartStepsProps {
     number: number | string

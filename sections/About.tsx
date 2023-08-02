@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import { TypingText } from '../components/'
 
-import styles from '../styles'
-import { fadeIn, staggerContainer,INavVariants } from '../utils/motion'
+import styles from '../styles/styles'
+import { fadeIn, staggerContainer } from '../utils/motion'
 
 const About = () => (
     <section className={`${styles.paddings} realtive z-10`}>
