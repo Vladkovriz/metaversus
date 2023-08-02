@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "^7.0.4",
+    "next": "latest",
+    "react": "18.2.0",
+    "nextjs-shared": "file:../shared",
+    "react-dom": "18.2.0",
+    "webpack": "^5.88.2",
+    "framer-motion": "^7.6.7",
+    "sass": "^1.57.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.15",
+    "typescript": "5.1.6",
+    "tailwindcss": "^3.2.4",
+    "postcss": "^8.4.19"
+  }
+}
