@@ -1,4 +1,35 @@
-export const navVariants = {
+interface ITransition {
+  type?: string;
+  opacity?: number;
+  stiffness?: number;
+  damping?: number;
+  delay?: number;
+  duration?: number;
+  ease?: string;
+  staggerChildren?: any;
+  delayChildren?: any;
+}
+
+interface IVariantState {
+  opacity?: number;
+  x?: number | string;
+  y?: number | string;
+  transition?: ITransition;
+  rotate?: number;
+  scale?: number;
+}
+
+export interface IVariant {
+  hidden: IVariantState,
+  show: IVariantState,
+}
+
+export interface ITextContainer {
+  hidden: IVariantState;
+  show: (i: number) => ITransition;
+}
+
+export const navVariants: IVariant = {
   hidden: {
     opacity: 0,
     y: -50,
@@ -19,7 +50,7 @@ export const navVariants = {
   },
 };
 
-export const slideIn = (direction, type, delay, duration) => ({
+export const slideIn = (direction: number | string, type: string, delay: number, duration: number):IVariant => ({
   hidden: {
     x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
     y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
@@ -36,17 +67,19 @@ export const slideIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const staggerContainer = (staggerChildren, delayChildren) => ({
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren,
-      delayChildren,
+export const staggerContainer: any = (staggerChildren: any, delayChildren: any): IVariant => {
+  return ({
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren,
+        delayChildren,
+      },
     },
-  },
-});
+  })
+};
 
-export const textVariant = (delay) => ({
+export const textVariant = (delay: number): IVariant => ({
   hidden: {
     y: 50,
     opacity: 0,
@@ -62,7 +95,7 @@ export const textVariant = (delay) => ({
   },
 });
 
-export const textContainer = {
+export const textContainer: ITextContainer = {
   hidden: {
     opacity: 0,
   },
@@ -72,7 +105,7 @@ export const textContainer = {
   }),
 };
 
-export const textVariant2 = {
+export const textVariant2: IVariant = {
   hidden: {
     opacity: 0,
     y: 20,
@@ -87,7 +120,7 @@ export const textVariant2 = {
   },
 };
 
-export const fadeIn = (direction, type, delay, duration) => ({
+export const fadeIn = (direction: string, type: string, delay: number, duration: number): IVariant => ({
   hidden: {
     x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
     y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
@@ -106,7 +139,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const planetVariants = (direction) => ({
+export const planetVariants = (direction: string | number):IVariant => ({
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
     rotate: 120,
@@ -122,7 +155,7 @@ export const planetVariants = (direction) => ({
   },
 });
 
-export const zoomIn = (delay, duration) => ({
+export const zoomIn = (delay: number, duration: number): IVariant => ({
   hidden: {
     scale: 0,
     opacity: 0,
@@ -139,7 +172,7 @@ export const zoomIn = (delay, duration) => ({
   },
 });
 
-export const footerVariants = {
+export const footerVariants: IVariant = {
   hidden: {
     opacity: 0,
     y: 50,

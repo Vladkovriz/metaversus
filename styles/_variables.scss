@@ -1,0 +1,44 @@
+// Colors
+$white: #fff;
+$black: #000;
+
+$mainColor: #222831;
+$secondColor: #393e46;
+$thirdColor: #29a19c;
+$fourthColor: #a3f7bf;
+
+$darkBlue: #29a19c;
+//$darkBlue: #26375e;
+
+// Fonts
+$appFont: 'Roboto', sans-serif;
+
+// Sizes
+$small: 'only screen and (min-width: 480px)';
+$untilMedium: 'only screen and (max-width: 767px)';
+$medium: 'only screen and (min-width: 768px)';
+$semiMedium: 'only screen and (min-width: 1024px)';
+$large: 'only screen and (min-width: 1200px)';
+$highLarge: 'only screen and (min-width: 1400px)';
+
+// Header
+
+$headerHeightSmall: 3.5rem;
+$headerHeightLarge: 5rem;
+
+// Footer
+
+$footerHeight: 17rem;
+
+// Timeouts
+
+$animationOut: cubic-bezier(0.4, 0, 1, 1);
+$animationIn: cubic-bezier(0, 0, 0.2, 1);
+
+// ZIndexes
+
+$zIndexToast: 999;
+$zIndexModal: 900;
+$zIndexDrawer: 800;
+$zIndexFixedButtons: 700;
+$zIndexExternalWidgets: 100;
