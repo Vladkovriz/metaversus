@@ -1,4 +1,6 @@
 {
+  "name": "metaversus",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001",
@@ -8,13 +10,11 @@
   "dependencies": {
     "css-loader": "^6.8.1",
     "framer-motion": "^7.6.7",
-    "mini-css-extract-plugin": "^2.7.6",
-    "next": "latest",
+    "next": "13.4.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
     "webpack": "^5.88.2"
   },
   "devDependencies": {
