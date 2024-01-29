@@ -8,6 +8,7 @@
     "start": "next start -p 3001"
   },
   "dependencies": {
+    "@types/node": "^20.10.3",
     "css-loader": "^6.8.1",
     "framer-motion": "^7.6.7",
     "next": "13.4.19",
